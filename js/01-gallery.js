@@ -29,10 +29,10 @@ function showImage(event) {
     let urlOriginalImage;
     urlOriginalImage = event.target.dataset.source;
     console.log(urlOriginalImage);
-    const instance = basicLightbox.create(`<div class="modal">
+    const instance = basicLightbox.create(`
 
      <img src="${urlOriginalImage}">
-     </div>
+     
     `);
     instance.show();
     window.addEventListener("keydown", closeByEsc);
